@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Françoise Xavière Mahoulomè DINALON – Portfolio</title>
+<meta name="description" content="Portfolio de Ton Françoise : projets web et multimédia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F3FA;
+    --ink: #221B33;
+    --plum: #3B1F5C;
+    --gold: #F2A900;
+    --muted: #5E5670;
+    --line: #D9D2E6;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --text: "Newsreader", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--text);
+    font-size: 1.125rem;
+    line-height: 1.65;
+  }
+  a { color: var(--plum); text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+  a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+
+  header.top { padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; gap: 1.5rem; flex-wrap: wrap; font-family: var(--display); font-weight: 500; font-size: 1rem; }
+  header.top a { text-decoration: none; }
+  header.top a:hover { text-decoration: underline; }
+
+  .hero { padding: 4rem 0 3rem; }
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(2.8rem, 11vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+    color: var(--plum);
+    margin: 0 0 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 10px solid var(--gold);
+    display: inline-block;
+  }
+  .hero p { font-size: 1.3rem; max-width: 34rem; margin: 0; }
+
+  section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+  h2 { font-family: var(--display); font-weight: 700; font-size: 1.6rem; margin: 0 0 1.5rem; letter-spacing: -0.01em; }
+
+  .project { padding: 0 0 0 1.25rem; border-left: 4px solid var(--plum); margin-bottom: 2rem; }
+  .project h3 { font-family: var(--display); font-weight: 700; font-size: 1.25rem; margin: 0 0 0.25rem; }
+  .project p { margin: 0 0 0.5rem; }
+  .project .meta { color: var(--muted); font-size: 1rem; font-style: italic; }
+  .project img { max-width: 100%; height: auto; border: 1px solid var(--line); margin: 0.5rem 0 0.75rem; display: block; }
+
+  ul.skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  ul.skills li { font-family: var(--display); font-weight: 500; font-size: 0.95rem; padding: 0.3rem 0.8rem; border: 1.5px solid var(--plum); border-radius: 999px; }
+
+  .contact a { display: block; font-family: var(--display); font-weight: 500; font-size: 1.15rem; margin-bottom: 0.4rem; }
+
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#projets">Projets</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>Ton Nom</h1>
+    <!-- Une phrase : ce que tu fais, pour qui. Exemple : -->
+    <p>Je conçois des sites et des contenus multimédia pour les petites entreprises.</p>
+  </div>
+
+  <section id="projets">
+    <h2>Projets</h2>
+
+    <!-- Copie ce bloc pour chaque projet. Garde 3 projets maximum. -->
+    <article class="project">
+      <h3>Titre du projet 1</h3>
+      <p>Ce que tu as fait, pour qui, et le résultat, en deux phrases.</p>
+      <p class="meta">HTML, CSS, JavaScript – 2024</p>
+      <p><a href="#">Voir le projet</a></p>
+    </article>
+
+    <article class="project">
+      <h3>Titre du projet 2</h3>
+      <p>Ce que tu as fait, pour qui, et le résultat, en deux phrases.</p>
+      <p class="meta">Outils utilisés – année</p>
+      <p><a href="#">Voir le projet</a></p>
+    </article>
+
+    <article class="project">
+      <h3>Titre du projet 3</h3>
+      <p>Ce que tu as fait, pour qui, et le résultat, en deux phrases.</p>
+      <p class="meta">Outils utilisés – année</p>
+      <p><a href="#">Voir le projet</a></p>
+    </article>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <!-- Garde seulement ce que tu maîtrises vraiment. -->
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git et GitHub</li>
+      <li>Design graphique</li>
+      <li>Montage vidéo</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a>
+    <a href="https://wa.me/00000000000">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/ton-profil">LinkedIn</a>
+    <a href="https://github.com/ton-pseudo">GitHub</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Ton Nom</div>
+</footer>
+
+</body>
+</html>
